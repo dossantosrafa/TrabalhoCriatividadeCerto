@@ -5,7 +5,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        // Inicialização dos jogadores
+        // Inicializando os jogadores
         Jogador jogador1 = new Jogador("Cassio", 30, "Goleiro", 69);
         Jogador jogador2 = new Jogador("Ze Ivaldo", 26, "Zagueiro", 9);
         Jogador jogador3 = new Jogador("João Marcelo", 23, "Zagueiro", 12);
@@ -30,18 +30,18 @@ public class Main {
         Jogador jogador21 = new Jogador("Grealish", 25, "Ponta Esquerda", 28);
         Jogador jogador22 = new Jogador("Foden", 22, "Ponta Direita", 69);
 
-        // Criação das listas de jogadores para os times
+        // Fazendo duas listas de jogadores, um para cada time
         List<Jogador> jogadoresTimeA = Arrays.asList(jogador1, jogador2, jogador3, jogador4, jogador5, jogador6, jogador7, jogador8, jogador9, jogador10, jogador11);
         List<Jogador> jogadoresTimeB = Arrays.asList(jogador12, jogador13, jogador14, jogador15, jogador16, jogador17, jogador18, jogador19, jogador20, jogador21, jogador22);
 
-        // Inicialização dos times
+        // Inicializando os times com suas listas de jogadores
         Time time1 = new Time("Cruzeiro", "Belo Horizonte", jogadoresTimeA);
         Time time2 = new Time("Manchester City", "Manchester", jogadoresTimeB);
 
-        // Lista de times
+        // Colocando os times numa lista
         List<Time> times = new ArrayList<>(Arrays.asList(time1, time2));
 
-        // Exibição do menu de interação
+        // Chamando o menu de interação
         MenuInteracao.exibirMenu(times);
     }
 }
